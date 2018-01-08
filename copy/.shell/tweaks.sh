@@ -14,7 +14,7 @@ export LESS_TERMCAP_md="${yellow}";
 # shells instead of the default "last window closed" history
 export PROMPT_COMMAND="history -a; $PROMPT_COMMAND"
 
-export EDITOR='subl'
+export EDITOR='vim'
 # export LESSEDIT='subl %f'
 # export VISUAL="$EDITOR"
 

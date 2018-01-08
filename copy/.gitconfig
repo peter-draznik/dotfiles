@@ -1,8 +1,8 @@
 [user]
-    name = Thomas Hudspith-Tatham
-    email = iammotivated@gmail.com
+    name = Peter Draznik
+    email = me@peterdraznik.com
 [github]
-    user = tomatau
+    user = peter-draznik 
 [core]
     editor = subl -n -w
     excludesfile = ~/.gitignore
