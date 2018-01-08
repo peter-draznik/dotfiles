@@ -37,8 +37,8 @@ Also, my github Username and Email are in the .gitconfig.
 #### Possible Todo List: 
 - ssh
 
-Created by 
-credits to: Peter Draznik
+Created by Peter Draznik
+credits to: 
 
 Thomas "tomatao" Hudspith-Tatham - https://github.com/tomatau/dotfiles
 
