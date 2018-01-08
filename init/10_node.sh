@@ -2,11 +2,12 @@
 
 # Can remove the .31 here to just install the latest
 # should uncomment the default_node="$(nvm current)" too
-declare default_node="v8.7.0"
+declare default_node="v9.3.0"
 declare node_versions=(
   "$default_node"
   v0.12.18
   v7.10.1
+  v8.7.0
 )
 declare npm_globals=(
   http-server
