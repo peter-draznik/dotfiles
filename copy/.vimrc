@@ -35,7 +35,7 @@ set splitright
 "Make it easy to edit .vimrc file"
 nmap <Leader>ev :tabedit $MYVIMRC<cr>
 "Make it easy to edit plugins.vim file"
-nmap <Leader>ep :tabedit ~/.vim/plugins.vim<cr>
+nmap <Leader>ep :tabedit ~/.vim/autoload/plugins.vim<cr>
 "Make it easy to edit .bash_profile file"
 nmap <Leader>eb :tabedit ~/.bash_profile<cr>
 "Close Tab"
