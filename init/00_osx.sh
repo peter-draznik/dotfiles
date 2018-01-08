@@ -33,11 +33,6 @@ if [[ "$(type -P brew)" ]]; then
     brew install cask
 
     casks=(
-        atom
-        beyond-compare
-        cd-to
-        cleanmymac2
-        firefox
         firefoxdeveloperedition
         flux
         google-chrome
@@ -45,19 +40,9 @@ if [[ "$(type -P brew)" ]]; then
         iterm2
         java
         lastpass
-        lunchy
-        mysqlworkbench
-        opera
-        rdm
         sequel-pro
         shiftit
-        skype
         slack
-        sublime-text
-        textmate
-        the-unarchiver
-        utorrent
-        visual-studio-code
         virtualbox
         vlc
         xquartz
@@ -74,8 +59,6 @@ if [[ "$(type -P brew)" ]]; then
     fi
     brew cask cleanup
 
-    # ln -s "/opt/homebrew-cask/Caskroom/google-chrome/latest/Google Chrome.app/Contents/MacOS/Google\ Chrome" "/Users/tomatao/.bin/google-chome"
-
     # Install Homebrew recipes.
     recipes=(
         ack
@@ -85,11 +68,7 @@ if [[ "$(type -P brew)" ]]; then
         curl
         docker
         elasticsearch
-        ffmpeg
         git
-        highlight
-        imagemagick
-        maven
         mongodb
         mycli
         mysql
@@ -97,12 +76,7 @@ if [[ "$(type -P brew)" ]]; then
         pgcli
         postgresql
         redis
-        sqlite
-        ssh-copy-id
-        tomcat
-        tree
         vim
-        yarn
     )
 
     list="$(to_install "${recipes[*]}" "$(brew list)")"
@@ -125,12 +99,10 @@ if [[ "$(type -P brew)" ]]; then
     fi
 
     plists=(
-        elasticsearch
         mongodb
         mysql
         nginx
         postgresql
-        redis
     )
 
     for p in plists; do
