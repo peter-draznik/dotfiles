@@ -6,6 +6,7 @@ declare default_python=3.6.2
 declare python_versions=(
   "$default_python"
   3.4.1
+  anaconda2-5.0.1
   anaconda-2.1.0
 )
 

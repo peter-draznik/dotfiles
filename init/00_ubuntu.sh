@@ -11,14 +11,7 @@ declare packages=(
   vim
   git
   curl
-  build-essential 
-  libssl-dev
-  zlib1g-dev
-  libbz2-dev
-  libreadline-dev
-  libsqlite3-dev
   wget
-  llvm
   make
 )
 

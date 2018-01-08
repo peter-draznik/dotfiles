@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-declare default_ruby=2.1.2
+declare default_ruby=2.4.0
 declare ruby_versions=(
   "$default_ruby"
   2.1.5

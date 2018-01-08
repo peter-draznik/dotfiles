@@ -1,6 +1,6 @@
 set nocompatible
 syntax enable
-so ~/.vim/plugins.vim
+so ~/.vim/autoload/plugins.vim
 
 "----- Global -----"
 set backspace=indent,eol,start "Make backspace behave like normal editor"

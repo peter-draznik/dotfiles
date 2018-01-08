@@ -53,5 +53,6 @@ run_directory "copy"
 PATH=~/.bin:$PATH
 export PATH
 . ~/.bash_profile
-
+source ~/.bash_profile
+vim +PluginInstall +qall
 e_header "All done! - Rember to restart your shell! :)"
