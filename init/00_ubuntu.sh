@@ -9,12 +9,8 @@ e_header "Updating APT"
 # build-essential and below req for pyenv
 declare packages=(
   vim
-  tree
   git
   curl
-  parcellite
-  vlc
-  meld
   build-essential 
   libssl-dev
   zlib1g-dev
