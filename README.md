@@ -2,7 +2,7 @@
 
 ### Usage:
 ```bash
-git clone git@github.com:peter-draznik/dotfiles.git
+git clone https://github.com/peter-draznik/dotfiles.git
 bash ./dotfiles/bin/dotfiles.sh
 ```
 
