@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 
-declare default_php=5.5.16
+declare default_php=7.2.1
 declare php_versions=(
   "$default_php"
-  5.3.29
+  5.5.16
 )
 
 function get_php_versions() {
@@ -24,10 +24,10 @@ function phpbrew_deps_install() {
     # Ubuntu only
   if [[ "$(cat /etc/issue 2> /dev/null)" =~ Ubuntu ]]; then
     e_header "Ubuntu Phpbrew deps"
-    sudo apt-get build-dep php5
-    sudo apt-get install -y php5 php5-dev php-pear \
+    sudo apt-get build-dep php7
+    sudo apt-get install -y php7 php7-dev php-pear \
       autoconf automake bison libbz2-dev \
-      libxslt1-dev re2c libxml2 libxml2-dev php5-cli
+      libxslt1-dev re2c libxml2 libxml2-dev php7-cli
     # +gd +openssl +gettext +mhash +mcrypt +icu
     sudo apt-get install -y libfreetype6 libfreetype6-dev \
       libpng12-0 libpng12-dev libjpeg-dev libjpeg8-dev \
