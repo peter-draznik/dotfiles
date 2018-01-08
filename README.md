@@ -2,7 +2,7 @@
 
 ### Usage:
 ```bash
-git clone git@github.com:tomatau/dotfiles.git
+git clone git@github.com:peter-draznik/dotfiles.git
 bash ./dotfiles/bin/dotfiles.sh
 ```
 
@@ -36,10 +36,11 @@ Also, my github Username and Email are in the .gitconfig.
 
 #### Possible Todo List: 
 - ssh
-- java?
 
-Created by Thomas "tomatao" Hudspith-Tatham
-credits to:
+Created by 
+credits to: Peter Draznik
+
+Thomas "tomatao" Hudspith-Tatham - https://github.com/tomatau/dotfiles
 
 "Cowboy" Ben Alman - https://github.com/cowboy/dotfiles
 
