@@ -63,7 +63,6 @@ if [[ "$(type -P brew)" ]]; then
     recipes=(
         ack
         bash
-        bash-completion
         chromedriver
         curl
         docker
