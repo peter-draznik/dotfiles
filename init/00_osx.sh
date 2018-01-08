@@ -33,7 +33,7 @@ if [[ "$(type -P brew)" ]]; then
     brew install cask
 
     casks=(
-        firefoxdeveloperedition
+    	firefoxdeveloperedition
         flux
         google-chrome
         google-chrome-canary
@@ -46,6 +46,8 @@ if [[ "$(type -P brew)" ]]; then
         virtualbox
         vlc
         xquartz
+    	zsh 
+	zsh-completions    
     )
 
     brew tap caskroom/versions

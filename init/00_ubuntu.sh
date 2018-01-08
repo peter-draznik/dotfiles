@@ -9,7 +9,10 @@ e_header "Updating APT"
 # build-essential and below req for pyenv
 declare packages=(
   vim
+  rbenv
+  zsh
   git
+  git-core
   curl
   wget
   make
