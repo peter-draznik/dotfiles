@@ -2,7 +2,7 @@
 
 PYENV_ROOT="$HOME/.pyenv"
 
-declare default_python=2.7.6
+declare default_python=3.6.2
 declare python_versions=(
   "$default_python"
   3.4.1
