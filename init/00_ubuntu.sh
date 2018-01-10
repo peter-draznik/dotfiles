@@ -10,7 +10,6 @@ e_header "Updating APT"
 declare packages=(
   vim
   rbenv
-  zsh
   git
   git-core
   curl

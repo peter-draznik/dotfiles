@@ -46,8 +46,6 @@ if [[ "$(type -P brew)" ]]; then
         virtualbox
         vlc
         xquartz
-    	zsh 
-	zsh-completions    
     )
 
     brew tap caskroom/versions
