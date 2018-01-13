@@ -33,18 +33,19 @@ if [[ "$(type -P brew)" ]]; then
     brew install cask
 
     casks=(
-    	firefoxdeveloperedition
+#    	firefoxdeveloperedition
         flux
         google-chrome
-        google-chrome-canary
+#        google-chrome-canary
         iterm2
         java
         lastpass
+	lunchy
         sequel-pro
-        shiftit
+#        shiftit
         slack
-        virtualbox
-        vlc
+#        virtualbox
+#        vlc
         xquartz
     )
 
@@ -68,13 +69,13 @@ if [[ "$(type -P brew)" ]]; then
         docker
         elasticsearch
         git
-        mongodb
+#        mongodb
         mycli
         mysql
         nginx
-        pgcli
+#        pgcli
         postgresql
-        redis
+#        redis
         vim
     )
 
@@ -98,10 +99,10 @@ if [[ "$(type -P brew)" ]]; then
     fi
 
     plists=(
-        mongodb
+#        mongodb
         mysql
         nginx
-        postgresql
+#        postgresql
     )
 
     for p in plists; do

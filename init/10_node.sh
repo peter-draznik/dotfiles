@@ -5,9 +5,8 @@
 declare default_node="v9.3.0"
 declare node_versions=(
   "$default_node"
-  v0.12.18
-  v7.10.1
   v8.7.0
+  v7.10.1
 )
 declare npm_globals=(
   http-server
@@ -26,19 +25,21 @@ function get_nvm_versions() {
 }
 
 function nvm_set_current_node() {
+    export NVM_DIR="$HOME/.nvm"
+    [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh" # This loads nvm
   for v in $(to_install "${node_versions[*]}" "$(get_nvm_versions)"); do
     nvm install "$v"
   done
-  # default_node="$(nvm current)"
+  default_node="$(nvm current)"
   nvm alias stable "$default_node"
   e_success "Installed Node $default_node and set as current"
 }
 
 function install_nvm() {
   if [[ ! -s "$NVM_DIR/nvm.sh" ]]; then
-    curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.5/install.sh | bash
+    curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.8/install.sh | bash
     export NVM_DIR="$HOME/.nvm"
-    [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
+    [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh" # This loads nvm
   fi
 }
 
@@ -54,7 +55,7 @@ fi
 # Update Npm
 e_header "Updating Npm"
 if [[ "$(type -P npm)" ]]; then
-  npm install -g npm
+  npm install npm@latest -g
 else
   e_error "Npm was not installed correctly :/"
   return 1

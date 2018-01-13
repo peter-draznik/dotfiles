@@ -9,8 +9,6 @@ if [ -d "$HOME/.bin" ] ; then
     PATH="$HOME/.bin:$PATH"
 fi
 
-[[ -s ~/.bin/z/z.sh ]] && . ~/.bin/z/z.sh
-
 PATH="$HOME/.rbenv/bin:$PATH"
 PYENV_ROOT="$HOME/.pyenv"
 PATH="$PYENV_ROOT/bin:$PATH"

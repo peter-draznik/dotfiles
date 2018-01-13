@@ -7,7 +7,7 @@ case $- in
 esac
 
 # Load Shell Scripts in order
-for file in ~/.shell/{options,history,aliases_file,aliases_programs,aliases_vcs,osx,ubuntu,tweaks,prompt}.sh; do
+for file in ~/.shell/{options,history,aliases_file,aliases_programs,aliases_vcs,osx,ubuntu,tweaks,prompt,aws_helper_functions}.sh; do
   [ -r ${file} ] && source ${file}
 done
 

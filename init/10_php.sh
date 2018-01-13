@@ -41,8 +41,8 @@ function phpbrew_deps_install() {
     sudo apt-get install mysql-server mysql-client \
       libmysqlclient-dev libmysqld-dev
     # postgresql
-    sudo apt-get install postgresql postgresql-client \
-      postgresql-contrib
+#    sudo apt-get install postgresql postgresql-client \
+#      postgresql-contrib
   fi
   if [[ "$OSTYPE" =~ ^darwin ]]; then
     e_header "OSX Phpbrew deps"
@@ -57,7 +57,7 @@ if [[ ! "$(type -P phpbrew)" ]]; then
   curl -L -O https://github.com/phpbrew/phpbrew/raw/master/phpbrew
   if [[ -s phpbrew ]]; then
     chmod +x phpbrew
-    sudo mv phpbrew /usr/bin/phpbrew
+    sudo mv phpbrew /usr/local/bin/phpbrew
     [[ "$(type -P phpbrew)" ]] && phpbrew init
     [[ -s ~/.phpbrew/bashrc ]] && . ~/.phpbrew/bashrc
   fi
